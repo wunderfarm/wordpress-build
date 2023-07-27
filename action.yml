@@ -1,0 +1,6 @@
+name: WF WordPress Build
+description: 'Build WordPress project.'
+author: 'wunderfarm'
+runs:
+  using: 'node12'
+  main: 'dist/index.js'
