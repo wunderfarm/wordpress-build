@@ -35,7 +35,7 @@ function buildApp() {
     execSync(`cp -R wp-config.* dist`).toString()
     execSync(`cp -R robots.txt dist 2>/dev/null || :`).toString()
     execSync(`rsync -ax --exclude node_modules packages dist 2>/dev/null || :`).toString()
-    execSync(`zip -rq build ./dist`).toString()
+    execSync(`zip -rq dist ./dist`).toString()
 }
 
 try {
